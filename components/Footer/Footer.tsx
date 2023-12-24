@@ -15,7 +15,7 @@ const IconsData = [
   { href: "https://www.linkedin.com/in/alexandershen2004/", Icon: LinkedinIcon },
 ];
 
-export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {
+export default function Footer(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {
   return (
     <div className="bg-AAprimary flex flex-col justify-center items-center py-8 space-y-4">
       {/* // ? Reach me at */}

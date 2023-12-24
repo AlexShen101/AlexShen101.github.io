@@ -1,5 +1,4 @@
 import React from "react";
-import ArrowIcon from "../Icons/ArrowIcon";
 import GithubIcon from "../Icons/GithubIcon";
 import LinkedinIcon from "../Icons/LinkedinIcon";
 import InstagramIcon from "../Icons/InstagramIcon";
@@ -23,23 +22,22 @@ export default function GetInTouch() {
     <div id="GetInTouchSection" data-aos="fade-up" className="flex flex-col space-y-4 w-full h-96 items-center bg-AAprimary">
       {/* // ? Title === > What's Next?  */}
       <div className="flex flex-row items-center ">
-        <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-AAsecondary" />
         <div className="flex flex-row space-x-2 items-center">
           <span className="text-AAsecondary font-sans text-sm  sm:text-base">
             {" "}
             04.
           </span>
           <span className=" font-sans text-AAsecondary text-base">
-            What&apos;s Next?
+            What's Next?
           </span>
         </div>
       </div>
       {/* // ? Get In Touch */}
       <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">
-        Let&apos;s connect
+        Get In Touch
       </span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        I&apos;m always looking for new opportunities and people to meet, so let&apos;s link up! 
+        I'm always looking for new opportunities and people to meet, so let's link up! 
         <br className="md:block hidden" />
         Whether you have a question or just want to say hi, feel free to reach out!
       </p>

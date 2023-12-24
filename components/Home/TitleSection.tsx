@@ -93,9 +93,9 @@ export default function MyName(props: { finishedLoading: boolean }) {
             <ReactScrollLink
               to="GetInTouchSection"
               spy={true} smooth={true} offset={-100} duration={200}
-              className="bg-AAprimary text-AAsecondary border rounded px-1 sm:px-8 py-3 sm:py-4 border-AAsecondary"
+              className="bg-AAprimary text-AAsecondary border rounded px-1 sm:px-8 py-3 sm:py-4 border-AAsecondary hover:cursor-pointer"
             >
-              Let&apos;s connect!
+              Let's connect!
             </ReactScrollLink>
             
           </motion.div>

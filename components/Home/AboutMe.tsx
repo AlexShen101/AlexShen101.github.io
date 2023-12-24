@@ -20,11 +20,6 @@ export default function AboutMe(props) {
       >
         <div className="justify-center flex flex-row items-center ">
           <div className="flex flex-rowitems-center mr-4">
-            <ArrowIcon
-              className={ 
-                "flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"
-              }
-            />
             <span className="text-AAsecondary font-Header text-sm  sm:text-xl">
               {" "}
               01.
@@ -44,7 +39,7 @@ export default function AboutMe(props) {
                 Type paragraph 1 here. With{" "}
                 <span className="text-AAsecondary">1.5 years</span> of
                 experience and a recent graduate with a Bachelors of Comp.
-                Science @ Sheridan College, I&apos;ve grown, developed and
+                Science @ Sheridan College, I've grown, developed and
                 dedicated my ability and skills in the software development
                 industry as a Full Stack Web / Mobile developer.
               </span>
@@ -53,8 +48,8 @@ export default function AboutMe(props) {
               <br />
 
               <span className="text-gray-400  tracking-wide">
-                Type paragraph 2 here. I&apos;ve dedicated myself to creating
-                and building full stack solutions. In the process, I&apos;ve
+                Type paragraph 2 here. I've dedicated myself to creating
+                and building full stack solutions. In the process, I've
                 honed myself in{" "}
                 <span className="text-AAsecondary">
                   web and mobile development
