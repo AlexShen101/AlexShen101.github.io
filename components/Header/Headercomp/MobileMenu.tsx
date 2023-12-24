@@ -56,7 +56,7 @@ const MobileMenu = props => {
             </span>
           </Link>
           <Link
-            to="SomethingIveBuiltSection"
+            to="ProjectsSection"
             spy={true}
             smooth={true}
             offset={100}

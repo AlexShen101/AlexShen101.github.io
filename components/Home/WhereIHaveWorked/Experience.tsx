@@ -7,7 +7,7 @@ import IdealFresh from "./Descriptions/IdealFresh";
 import AdvancedAgroManagement from "./Descriptions/AdvancedAgroManagement";
 import Fantasia from "./Descriptions/Fantasia";
 import SuperBerry from "./Descriptions/SuperBerry";
-export default function WhereIHaveWorked() {
+export default function Experience() {
   const barRef = React.useRef<HTMLDivElement>(null);
   // ? INFORMATIONAL control the green position using px,
   // ? INFORMATIONAL the default value of barRef's class should be at the beginning translate-y-[0px]

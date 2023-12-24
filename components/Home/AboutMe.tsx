@@ -1,6 +1,6 @@
 import React from "react";
-import Img from "../../../components/smallComp/image/Img";
-import ArrowIcon from "../../../components/Icons/ArrowIcon";
+import Img from "../smallComp/image/Img";
+import ArrowIcon from "../Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
     ["React.js", "Node.js", "JavaScript (ES6+)", "Python"], 
@@ -70,6 +70,9 @@ export default function AboutMe(props) {
                   My tech stack includes but is not limited to:
                 </span>
               </div>
+              
+              <br className="md:block hidden" />
+              <br />
               <div className="font-Header tracking-wide flex flex-row space-x-16">
                 <div className="flex flex-row space-x-2 items-center">
                   <div className="flex flex-col space-y-4 sm:text-base text-sm">

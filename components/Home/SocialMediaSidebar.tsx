@@ -1,8 +1,8 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
-import GithubIcon from "../../Icons/GithubIcon";
-import LinkedinIcon from "../../Icons/LinkedinIcon";
-import EmailIcon from "../../Icons/EmailIcon";
+import { motion } from "../../node_modules/framer-motion/dist/framer-motion";
+import GithubIcon from "../Icons/GithubIcon";
+import LinkedinIcon from "../Icons/LinkedinIcon";
+import EmailIcon from "../Icons/EmailIcon";
 
 const IconClickableWithAnimation = props => {
   return (

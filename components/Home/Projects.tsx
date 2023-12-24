@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import ArrowIcon from "../../Icons/ArrowIcon";
-import Img from "../../smallComp/image/Img";
-import GithubIcon from "../../Icons/GithubIconForSomethingIveBuild";
-import ExternalLink from "../../Icons/ExternalLink";
+import ArrowIcon from "../Icons/ArrowIcon";
+import Img from "../smallComp/image/Img";
+import GithubIcon from "../Icons/GithubIconProjects";
+import ExternalLink from "../Icons/ExternalLink";
 
-export default function SomethingIveBuilt() {
+export default function Projects() {
   const router = useRouter();
   return (
     <div
-      id="SomethingIveBuiltSection"
+      id="ProjectsSection"
       className=" flex flex-col xl:space-y-28 space-y-12 bg-AAprimary w-full  
      2xl:px-72 lg:px-24 md:px-16 sm:px-16 py-32 px-4"
     >

@@ -1,13 +1,11 @@
 import Header from "../components/Header/Header";
-import Startup from "../components/Header/StartupLogo/Startup";
-import MyName from "../components/Home/MyName/MyName";
+import MyName from "../components/Home/TitleSection";
 import { useContext, useEffect, useState, useRef } from "react";
-import SocialMediaAround from "../components/Home/SocialMediaAround/SocialMediaAround";
-import AboutMe from "../components/Home/AboutMe/AboutMe";
-import ThisCantBeReached from "../components/Home/ThisSiteCantBeReached/ThisCantBeReached";
-import WhereIHaveWorked from "../components/Home/WhereIHaveWorked/WhereIHaveWorked";
-import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
-import GetInTouch from "../components/Home/GetInTouch/GetInTouch";
+import SocialMediaAround from "../components/Home/SocialMediaSidebar";
+import AboutMe from "../components/Home/AboutMe";
+import Experience from "../components/Home/WhereIHaveWorked/Experience";
+import Projects from "../components/Home/Projects";
+import GetInTouch from "../components/Home/GetInTouch";
 import Footer from "../components/Footer/Footer";
 import AppContext from "../components/AppContextFolder/AppContext";
 import Aos from "aos";
@@ -74,8 +72,8 @@ export default function Home() {
         <MyName finishedLoading={true} />
         <SocialMediaAround finishedLoading={true} />
         {true ? <AboutMe ref={aboutRef} /> : <></>}
-        {true ? <WhereIHaveWorked /> : <></>}
-        {true ? <SomethingIveBuilt /> : <></>}
+        {true ? <Experience /> : <></>}
+        {true ? <Projects /> : <></>}
         {true ? <GetInTouch /> : <></>}
         {true ? (
           <Footer githubUrl={"https://github.com/AlexShen101"} hideSocialsInDesktop={true} />

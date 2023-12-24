@@ -1,9 +1,9 @@
 import React from "react";
-import ArrowIcon from "../../Icons/ArrowIcon";
-import GithubIcon from "../../Icons/GithubIcon";
-import LinkedinIcon from "../../Icons/LinkedinIcon";
-import InstagramIcon from "../../Icons/InstagramIcon";
-import YoutubeIcon from "../../Icons/YoutubeIcon";
+import ArrowIcon from "../Icons/ArrowIcon";
+import GithubIcon from "../Icons/GithubIcon";
+import LinkedinIcon from "../Icons/LinkedinIcon";
+import InstagramIcon from "../Icons/InstagramIcon";
+import YoutubeIcon from "../Icons/YoutubeIcon";
 
 const IconsData = [
   { href: "https://github.com/AlexShen101", Icon: GithubIcon },
