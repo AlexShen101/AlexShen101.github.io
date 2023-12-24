@@ -12,7 +12,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
       px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-32 sm:py-52  "
     >
       
-        {/* <motion.span
+        <motion.span
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
@@ -22,8 +22,8 @@ export default function MyName(props: { finishedLoading: boolean }) {
           className="text-AAsecondary font-mono"
         >
           Hi, my name is
-        </motion.span> */}
-        <motion.span
+        </motion.span>
+        <motion.h1
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
@@ -32,8 +32,8 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-gray-300 font-bold text-md lg:text-md sm:text-2xl md:text-md mt-4"
         >
-          Madhav Jaisankar
-        </motion.span>
+          Alexander Shen
+        </motion.h1>
         <motion.h2
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -43,8 +43,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-gray-400 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
         >
-          Full Stack Software Engineer
-          {/* I make ideas & things alive. */}
+          I make things.
         </motion.h2>
 
         <motion.h3
@@ -56,16 +55,10 @@ export default function MyName(props: { finishedLoading: boolean }) {
           }}
           className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
         >
-
-          {/* Thanks for checking out <span className="text-AAsecondary">my portfolio</span>.  */}
           <br className="md:block hidden" />
-          {/* You can expect regular updates here on details about me, what I&apos;m doing and what I&apos;ve worked on. */}
-          {/* I&apos;m a <span className="text-AAsecondary">software engineer</span> skilled in problem-solving and specializing in building
-          <br className="md:block hidden" /> (and occasionally designing) exceptional digital experiences. Currently.{" "}
-          <br className="md:block hidden" />
-          I&apos;m focused on creating and deploying <span className="text-AAsecondary">Smart Contracts</span> on the
-          Blockchain. */}
+          I build exceptional and accessible digital experiences for the web.
         </motion.h3>
+
         <div className="flex flex-row pt-12 space-x-4">
           <motion.div
             initial={{ y: 10, opacity: 0 }}
@@ -76,8 +69,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
             }}
             className=""
           >
-            {/* <a href={"https://docs.google.com/document/d/1E4TdnjVs5oVecf597O_JbVMOTpVObCll/edit?usp=sharing&ouid=107318243930186771380&rtpof=true&sd=trues"} target={"_blank"} rel="noreferrer"> */}
-
+            
             <a
               href={"https://drive.google.com/file/d/1AYqI_2-_V3lxneXoZaBpb6FgSqdKLx6x/view?usp=sharing"}
               className="bg-AAprimary text-AAsecondary border rounded px-1 sm:px-8 py-3 sm:py-4 border-AAsecondary"
@@ -97,7 +89,6 @@ export default function MyName(props: { finishedLoading: boolean }) {
             }}
             className=""
           >
-            {/* <a href={"https://docs.google.com/document/d/1E4TdnjVs5oVecf597O_JbVMOTpVObCll/edit?usp=sharing&ouid=107318243930186771380&rtpof=true&sd=trues"} target={"_blank"} rel="noreferrer"> */}
 
             <ReactScrollLink
               to="GetInTouchSection"

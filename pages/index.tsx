@@ -2,7 +2,7 @@ import Header from "../components/Header/Header";
 import Startup from "../components/Header/StartupLogo/Startup";
 import MyName from "../components/Home/MyName/MyName";
 import { useContext, useEffect, useState, useRef } from "react";
-import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
+import SocialMediaAround from "../components/Home/SocialMediaAround/SocialMediaAround";
 import AboutMe from "../components/Home/AboutMe/AboutMe";
 import ThisCantBeReached from "../components/Home/ThisSiteCantBeReached/ThisCantBeReached";
 import WhereIHaveWorked from "../components/Home/WhereIHaveWorked/WhereIHaveWorked";
@@ -14,9 +14,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 export default function Home() {
-  const [ShowElement, setShowElement] = useState(false);
-  const [ShowThisCantBeReached, setShowThisCantBeReached] = useState(true);
-  const [ShowMe, setShowMe] = useState(false);
   // context Variable to clearInterval
   const context = useContext(AppContext);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -33,20 +30,6 @@ export default function Home() {
       window.removeEventListener("resize", context.sharedState.typing.eventInputLostFocus);
       document.removeEventListener("keydown", context.sharedState.typing.keyboardEvent);
     }
-    setTimeout(() => {
-      setShowElement(true);
-    },  400); //4500);
-
-    setTimeout(() => {
-      setShowThisCantBeReached(false);
-    },  400); //5400);
-    // ? INFORMATIONAL next function will show the component after changing the state of ShowMe
-    setTimeout(() => {
-      setShowElement(false);
-      setShowMe(true);
-      context.sharedState.finishedLoading = true;
-      context.setSharedState(context.sharedState);
-    }, 400); //10400);
   }, [context, context.sharedState]);
 
   useEffect(() => {
@@ -57,7 +40,7 @@ export default function Home() {
 
   console.log("Portfolio Rendered...");
   const meta = {
-    title: "Madhav J. - Software Developer",
+    title: "Alex S. - Software Developer",
     description: `A fresh developer with 1+ years of experience.`,
     image: "/titofCercle.png",
     type: "website",
@@ -89,13 +72,13 @@ export default function Home() {
         {/* <MyName finishedLoading={context.sharedState.finishedLoading} /> */}
         <Header finishedLoading={true} sectionsRef={homeRef} />
         <MyName finishedLoading={true} />
-        <SocialMediaArround finishedLoading={true} />
+        <SocialMediaAround finishedLoading={true} />
         {true ? <AboutMe ref={aboutRef} /> : <></>}
         {true ? <WhereIHaveWorked /> : <></>}
         {true ? <SomethingIveBuilt /> : <></>}
         {true ? <GetInTouch /> : <></>}
         {true ? (
-          <Footer githubUrl={"https://github.com/MadhavJai007/my-portfolio"} hideSocialsInDesktop={true} />
+          <Footer githubUrl={"https://github.com/AlexShen101"} hideSocialsInDesktop={true} />
         ) : (
           <></>
         )}

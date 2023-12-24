@@ -6,10 +6,8 @@ import InstagramIcon from "../../Icons/InstagramIcon";
 import YoutubeIcon from "../../Icons/YoutubeIcon";
 
 const IconsData = [
-  { href: "https://github.com/MadhavJai007", Icon: GithubIcon },
-  { href: "https://www.linkedin.com/in/madhav-jaisankar/", Icon: LinkedinIcon },
-  // { href: "https://www.instagram.com/titof_abdo/", Icon: InstagramIcon },
-  // { href: "https://www.youtube.com/@abdellatif_anaflous", Icon: YoutubeIcon },
+  { href: "https://github.com/AlexShen101", Icon: GithubIcon },
+  { href: "https://www.linkedin.com/in/alexandershen2004/", Icon: LinkedinIcon },
 ];
 
 const ClickableIcon = props => {
@@ -43,10 +41,10 @@ export default function GetInTouch() {
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
         I&apos;m always looking for new opportunities and people to meet, so let&apos;s link up! 
         <br className="md:block hidden" />
-        Even if you just want to say hello
+        Whether you have a question or just want to say hi, feel free to reach out!
       </p>
       <div className="pt-4">
-        <a href="mailto:madhav.jaisankar@gmail.com" target={"_blank"} rel="noreferrer">
+        <a href="mailto:alexander.shen@gmail.com" target={"_blank"} rel="noreferrer">
           <button
             className="font-mono text-sm text-AAsecondary border-AAsecondary 
                             px-8 py-4 border-[1.5px] rounded "
@@ -54,11 +52,6 @@ export default function GetInTouch() {
             Say Hello
           </button>
         </a>
-      </div>
-      <div className={`flex flex-row space-x-8 pt-3`}>
-        {IconsData.map((iconData, index) => {
-          return <ClickableIcon key={index} href={iconData.href} Icon={iconData.Icon} />;
-        })}
       </div>
     </div>
   );
