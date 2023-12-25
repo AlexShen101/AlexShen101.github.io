@@ -115,7 +115,7 @@ export default function MyName(props: {}) {
                 }}
                 className="bg-AAprimary text-AAsecondary border rounded px-1 sm:px-8 py-3 sm:py-4 border-AAsecondary hover:cursor-pointer"
               >
-                Let's connect
+                Let&apos;s connect
               </motion.button>
             </div>
           </ReactScrollLink>

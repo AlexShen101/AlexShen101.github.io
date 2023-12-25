@@ -28,7 +28,7 @@ export default function GetInTouch(props) {
             {props.num}.
           </span>
           <span className=" font-sans text-AAsecondary text-base">
-            What's Next?
+            What&apos;s Next?
           </span>
         </div>
       </div>
@@ -37,11 +37,9 @@ export default function GetInTouch(props) {
         Get In Touch
       </span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        I'm always looking for new opportunities and people to meet, so let's
-        link up!
+        I&apos;m always looking for new opportunities and people to meet, so let&apos;s link up!
         <br className="md:block hidden" />
-        Whether you have a question or just want to say hi, feel free to reach
-        out!
+        Whether you have a question or just want to say hi, feel free to reach out!
       </p>
       <div className="pt-4">
         <a
