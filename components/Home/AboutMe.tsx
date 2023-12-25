@@ -22,13 +22,13 @@ export default function AboutMe(props) {
           <div className="flex flex-rowitems-center mr-4">
             <span className="text-AAsecondary font-Header text-sm  sm:text-xl">
               {" "}
-              01.
+              {props.num}.
             </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               About Me
             </span>
           </div>
-          <div className="bg-gray-400 h-[0.2px] w-full sm:w-72 ml-4"></div>
+          <div className="bg-gray-700 h-[0.2px] w-full sm:w-72 ml-4"></div>
         </div>
         {/* // ? Paragraphs */}
 
@@ -36,26 +36,6 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400  tracking-wide">
-                Type paragraph 1 here. With{" "}
-                <span className="text-AAsecondary">1.5 years</span> of
-                experience and a recent graduate with a Bachelors of Comp.
-                Science @ Sheridan College, I've grown, developed and
-                dedicated my ability and skills in the software development
-                industry as a Full Stack Web / Mobile developer.
-              </span>
-
-              <br className="md:block hidden" />
-              <br />
-
-              <span className="text-gray-400  tracking-wide">
-                Type paragraph 2 here. I've dedicated myself to creating
-                and building full stack solutions. In the process, I've
-                honed myself in{" "}
-                <span className="text-AAsecondary">
-                  web and mobile development
-                </span>{" "}
-                skills and technologies to build full stack solutions in an
-                Agile team environment.
               </span>
 
               <br className="md:block hidden" />
@@ -122,38 +102,6 @@ export default function AboutMe(props) {
                 </div>
               </div>
             </div>
-            {/* // ? Image in Desktop and Tablet */}
-
-            {/* <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">
-              <div
-                className="group-hover:translate-x-3 group-hover:translate-y-3
-               duration-300 absolute w-5/6 h-5/6 border-2 border-AAsecondary translate-x-5 
-               translate-y-5 rounded"
-              ></div>
-
-              <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
-                <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div>
-                <Img
-                  src={"/img/Portfolio-portrait-3.jpg"}
-                  className={"object-contain rounded-lg"}
-                  alt="My Image Not Found"
-                />
-              </div>
-            </div> */}
-
-            {/* // ?Image in Mobile */}
-            
-            {/* <div className=" relative w-full h-48 md:hidden  flex items-center">
-              <div className="absolute w-48 h-full  rounded  translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
-              <div className="absolute w-48 h-full rounded overflow-hidden">
-                <Img
-                  src={"/img/titof.jpg"}
-                  className={"object-contain rounded-lg"}
-                  alt="My Image Not Found"
-                />
-              </div>
-              <div className="absolute w-48 h-full  bg-AAsecondary opacity-60  rounded overflow-hidden"></div>
-            </div> */}
           </div>
         </div>
       </div>

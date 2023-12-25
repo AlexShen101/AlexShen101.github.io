@@ -6,8 +6,7 @@ import PolarisIntelligence from "./Descriptions/PolarisIntelligence";
 const companies = [
   PolarisIntelligence,
   JanaCorporation, 
-  MinistryOfHealth,
-  MinistryOfHealth,
+  MinistryOfHealth
 ]
 
 export default companies;

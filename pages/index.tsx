@@ -18,32 +18,17 @@ export default function Home() {
   const homeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // remove the interval Cookie timer setter when
-    clearInterval(context.sharedState.userdata.timerCookieRef.current);
-    if (typeof window !== "undefined") {
-      // remove UserDataPuller project EventListeners
-      window.removeEventListener("resize", context.sharedState.userdata.windowSizeTracker.current);
-      window.removeEventListener("mousemove", context.sharedState.userdata.mousePositionTracker.current, false);
-      // remove Typing project EventListeners
-      window.removeEventListener("resize", context.sharedState.typing.eventInputLostFocus);
-      document.removeEventListener("keydown", context.sharedState.typing.keyboardEvent);
-    }
-  }, [context, context.sharedState]);
-
-  useEffect(() => {
     Aos.init({ duration: 2000, once: true });
   }, []);
-
- 
 
   console.log("Portfolio Rendered...");
   const meta = {
     title: "Alex S. - Software Developer",
     description: `A fresh developer with 1+ years of experience.`,
-    image: "/titofCercle.png",
+    image: "/favicon.ico",
     type: "website",
   };
- 
+
   return (
     <>
       <Head>
@@ -64,22 +49,17 @@ export default function Home() {
         {/* <meta name="twitter:image" content={meta.image} /> */}
       </Head>
       <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-        {/* {context.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>} */}
-        {/* {context.sharedState.finishedLoading ? <></> : ShowElement ? <Startup /> : <></>} */}
-        {/* <Header finishedLoading={context.sharedState.finishedLoadin} sectionsRef={homeRef} /> */}
-        {/* <MyName finishedLoading={context.sharedState.finishedLoading} /> */}
-        <Header finishedLoading={true} sectionsRef={homeRef} />
-        <MyName finishedLoading={true} />
-        <SocialMediaAround finishedLoading={true} />
-        {true ? <AboutMe ref={aboutRef} /> : <></>}
-        {true ? <Experience /> : <></>}
-        {true ? <Projects /> : <></>}
-        {true ? <GetInTouch /> : <></>}
-        {true ? (
-          <Footer githubUrl={"https://github.com/AlexShen101"} hideSocialsInDesktop={true} />
-        ) : (
-          <></>
-        )}
+        <Header sectionsRef={homeRef} />
+        <MyName />
+        <SocialMediaAround />
+        {/* <AboutMe ref={aboutRef} /> */}
+        <Experience num={"01"}/>
+        <Projects num={"02"}/>
+        <GetInTouch num={"03"}/>
+        <Footer
+          githubUrl={"https://github.com/AlexShen101/my-portfolio"}
+          hideSocialsInDesktop={true}
+        />
       </div>
     </>
   );

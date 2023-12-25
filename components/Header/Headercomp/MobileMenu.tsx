@@ -1,6 +1,6 @@
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { Link } from "react-scroll";
-const MobileMenu = props => {
+const MobileMenu = (props) => {
   const closeMenu = () => {
     props.setRotate(!props.rotate);
     props.setShowElement(!props.ShowElement);
@@ -47,7 +47,9 @@ const MobileMenu = props => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">02.</span>
+            <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">
+              02.
+            </span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
@@ -89,13 +91,26 @@ const MobileMenu = props => {
               Contact
             </span>
           </Link>
-          <a href={"https://drive.google.com/file/d/1AYqI_2-_V3lxneXoZaBpb6FgSqdKLx6x/view?usp=sharing"} target={"_blank"} rel="noreferrer">
-            <button
-              className="rounded border font-Text2  border-AAsecondary
-           hover:bg-ResumeButtonHover py-2 sm:py-4 px-5 sm:px-10 text-xs text-AAsecondary"
-            >
-              Resume
-            </button>
+          <a
+            href={
+              "/resume.pdf"
+            }
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <div className="bg-AAsecondary rounded">
+              <motion.button
+                initial={{ z: 1 }}
+                whileHover={{ translateY: -5, translateX: -5 }}
+                transition={{
+                  type: "tween",
+                  duration: 0.2,
+                }}
+                className="rounded border font-Text2  border-AAsecondary py-2 sm:py-4 px-5 sm:px-10 text-xs text-AAsecondary bg-AAprimary"
+              >
+                Resume
+              </motion.button>
+            </div>
           </a>
         </div>
       </motion.div>

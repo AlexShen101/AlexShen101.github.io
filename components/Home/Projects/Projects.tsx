@@ -1,12 +1,8 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Img from "../../smallComp/image/Img";
-import GithubIcon from "../../Icons/GithubIconProjects";
-import ExternalLink from "../../Icons/ExternalLink";
 import Project from "./Project";
 
-export default function Projects() {
+export default function Projects(props) {
   const router = useRouter();
   return (
     <div
@@ -19,14 +15,14 @@ export default function Projects() {
         <div className="flex-none flex-row space-x-2 items-center pr-2">
           <span className="text-AAsecondary font-sans text-sm  sm:text-xl">
             {" "}
-            03.
+            {props.num}.
           </span>
           <span className=" font-bold tracking-wider text-gray-200 text-lg md:text-2xl w-44 md:w-56 opacity-85">
             {" "}
             Some Things I've Built
           </span>
         </div>
-        <div className="bg-gray-400 h-[0.2px] w-full xl:w-1/3 md:w-1/2"></div>
+        <div className="bg-gray-700 h-[0.2px] w-full xl:w-1/3 md:w-1/2"></div>
       </div>
 
       <div className="flex flex-col   xl:space-y-36 space-y-8 md:space-y-28">
@@ -127,7 +123,7 @@ export default function Projects() {
       </div>
 
       {/* // ? Title === view the archive  */}
-      <div className="justify-center flex flex-row items-center ">
+      {/* <div className="justify-center flex flex-row items-center ">
         <div className="flex flex-row space-x-2 items-center">
           <a href={"/archive"} className="" target={"_blank"} rel="noreferrer">
             <span className="font-sans text-AAsecondary text-base">
@@ -135,7 +131,7 @@ export default function Projects() {
             </span>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -15,9 +15,8 @@ const ProjectContent = (props) => {
         }
       >
         <span className="text-AAsecondary text-base">Featured Project</span>
-
         <a href={props.deployLink} target="_blank" rel="noopener noreferrer">
-          <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+          <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer hover:text-AAsecondary">
             {props.title}
           </span>
         </a>

@@ -19,13 +19,13 @@ const IconClickableWithAnimation = props => {
     </motion.div>
   );
 };
-export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
+export default function SocialMediaEmail(props: { }) {
   return (
     <>
       <motion.div
         initial={{ y: "100%" }}
         animate={{ y: "0%" }}
-        transition={{ y: { delay: props.finishedLoading ? 0 : 11, duration: props.finishedLoading ? 0 : 0.5 } }}
+        transition={{ y: { delay: 0, duration: 0} }}
         className="z-10 fixed bottom-0 left-0  hidden lg:flex flex-row px-12 items-center justify-between  "
       >
         <div className="flex flex-col space-y-8 justify-center items-center">
@@ -36,7 +36,7 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
             <IconClickableWithAnimation Icon={LinkedinIcon} href={"https://www.linkedin.com/in/alexandershen2004/"} />
             <IconClickableWithAnimation Icon={EmailIcon} href={"mailto:alexander.shen@gmail.com"} />
           </div>
-          <div className="h-28 w-0.5 bg-gray-400"></div>
+          <div className="h-28 w-0.5 bg-gray-700"></div>
         </div>
       </motion.div>
     </>

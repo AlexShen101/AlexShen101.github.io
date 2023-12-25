@@ -4,9 +4,6 @@ import AppContext from "../components/AppContextFolder/AppContext";
 import { useRef, useState } from "react";
 
 function MyApp({ Component, pageProps }) {
-  const timerCookie = useRef(null);
-  const windowSizeTrackerRef = useRef(null);
-  const mousePositionRef = useRef(null);
   const [sharedState, setSharedState] = useState({
     portfolio: {
       NavBar: {
@@ -17,17 +14,7 @@ function MyApp({ Component, pageProps }) {
       Scrolling:{
         IntervalEvent:null
       }
-    },
-    userdata: {
-      timerCookieRef: timerCookie,
-      windowSizeTracker: windowSizeTrackerRef,
-      mousePositionTracker: mousePositionRef,
-    },
-    typing: {
-      keyboardEvent: null,
-      eventInputLostFocus: null,
-    },
-    finishedLoading: false,
+    }
   });
   return (
     <AppContext.Provider value={{ sharedState, setSharedState }}>
