@@ -75,10 +75,3 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [an
 | Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
 
 ---
-
-
-- Linkedin - [@abdellatif-anaflous](https://www.linkedin.com/in/abdellatif-anaflous/)
-- Website - [Abdellatif Anaflous](https://anaflous.com)
-
-[Back To The Top](#description) :
-
