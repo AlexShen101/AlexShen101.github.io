@@ -6,4 +6,6 @@ const nextConfig = {
   output: "export"
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig
+}
