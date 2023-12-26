@@ -42,7 +42,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [an
 3. Install yarn
 4. Install dependencies
    ```sh
-   yarn //or yarn install
+   yarn
    ```
 5. Start the development server
    ```sh
