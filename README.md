@@ -28,8 +28,6 @@ Please note that the design of the website is inspired from "brittanychiang.com"
 - [Description](#description)
 - [How To Use](#how-to-use)
 - [🎨 Color Reference](#references)
-- [License](#license)
-- [Author Info](#author-info)
 
 ---
 ## Description
@@ -82,24 +80,8 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [an
    ```sh
    yarn
    ```
-   
-4. (OPTIONAL) : Add .env file to the root project 
- 
-```bash
-    touch .env
-```
 
-5.  (OPTIONAL) : Add your Google API key inside .env file.
-
-###### ***Note :***
-###### not Adding Google API to the project will cause not returning the correct zip code, it might be always "00000"
-###### make sure you enabled Geolocation to this API
-
-```Javascript
-    NEXT_PUBLIC_KEY_GOOGLE_API="your API key"
-```
-
-6. Start the development server
+4. Start the development server
 
    ```sh
    yarn dev
@@ -113,7 +95,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [an
    yarn build
    ```
 
-1. Preview the site as it will appear once deployed
+2. Preview the site as it will appear once deployed
 
    ```sh
    yarn run serve
