@@ -33,7 +33,7 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.ico" />
       </Head>
       <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
         <Header sectionsRef={homeRef} />

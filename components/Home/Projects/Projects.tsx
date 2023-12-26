@@ -29,7 +29,7 @@ export default function Projects(props) {
         <Project
           githubLink="https://github.com/AlexShen101/genshin_tcg_deck_builder"
           deployLink="http://genshintcg.alexshen.com.de"
-          imgPath="/projects/genshintcg.png"
+          imgPath="./projects/genshintcg.png"
           imgAlt="Genshin TCG IMG"
           title="Genshin Deck Builder"
           desc={
@@ -58,7 +58,7 @@ export default function Projects(props) {
         <Project
           githubLink="https://github.com/AlexShen101/cq-hero-db"
           deployLink="https://github.com/AlexShen101/cq-hero-db"
-          imgPath="/projects/cq-hero.png"
+          imgPath="./projects/cq-hero.png"
           imgAlt="CQ Hero Img"
           title="CQ Hero Wiki/Tierlist"
           desc={
@@ -104,7 +104,7 @@ export default function Projects(props) {
         <Project
           githubLink="https://github.com/AlexShen101/simple-chess_cs-246"
           deployLink="https://github.com/AlexShen101/simple-chess_cs-246"
-          imgPath="/projects/simple-chess.png"
+          imgPath="./projects/simple-chess.png"
           imgAlt="Chess Img"
           title="Simple Chess"
           desc={
