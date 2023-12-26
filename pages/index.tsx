@@ -25,8 +25,6 @@ export default function Home() {
   const meta = {
     title: "Alex S. - Software Developer",
     description: `A fresh developer with 1+ years of experience.`,
-    image: "/favicon.ico",
-    type: "website",
   };
 
   return (
@@ -35,27 +33,16 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={``} />
-        <link rel="canonical" href={``} />
-        <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="" />
-        <meta property="og:description" content={meta.description} />
-        <meta property="og:title" content={meta.title} />
-        {/* <meta property="og:image" content={meta.image} /> */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@mannupaaji" />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
-        {/* <meta name="twitter:image" content={meta.image} /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
         <Header sectionsRef={homeRef} />
         <MyName />
         <SocialMediaAround />
         {/* <AboutMe ref={aboutRef} /> */}
-        <Experience num={"01"}/>
-        <Projects num={"02"}/>
-        <GetInTouch num={"03"}/>
+        <Experience num={"01"} />
+        <Projects num={"02"} />
+        <GetInTouch num={"03"} />
         <Footer
           githubUrl={"https://github.com/AlexShen101/my-portfolio"}
           hideSocialsInDesktop={true}
