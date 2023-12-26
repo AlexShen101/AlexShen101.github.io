@@ -93,7 +93,7 @@ const MobileMenu = (props) => {
           </Link>
           <a
             href={
-              `/v1-portfolio/resume.pdf`
+              `/resume.pdf`
             }
             target={"_blank"}
             rel="noreferrer"

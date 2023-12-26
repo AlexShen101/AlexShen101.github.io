@@ -65,7 +65,7 @@ export default function DesktopMenu(props: {}) {
       </motion.span>
       <a
         href={
-          `/v1-portfolio/resume.pdf`
+          `/resume.pdf`
         }
         target={"_blank"}
         rel="noreferrer"
