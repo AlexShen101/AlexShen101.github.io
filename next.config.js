@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const repo = 'v1-portfolio'
-const basePath = `/${repo}`
-
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: false,
@@ -10,6 +7,5 @@ const nextConfig = {
 }
 
 module.exports = {
-  nextConfig,
-  basePath: basePath,
+  nextConfig
 }

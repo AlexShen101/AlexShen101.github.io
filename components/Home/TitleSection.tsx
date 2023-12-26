@@ -67,7 +67,7 @@ export default function MyName(props: {}) {
         >
           <a
             href={
-              "/resume.pdf"
+              `/v1-portfolio/resume.pdf`
             }
             target={"_blank"}
             rel="noreferrer"
