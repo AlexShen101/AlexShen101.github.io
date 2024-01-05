@@ -1,21 +1,13 @@
 const PolarisIntelligence = {
   tasks: [
     {
-      text: "Template point 1.",
-      keywords: ["40% of regression test cases", "Selenium and Java", "faster software delivery"],
-    },
-    {
-      text: "Documented over 100 bugs using JIRA, TestRail and the AGILE methodology, significantly enhancing the software’s reliability and user experience",
-      keywords: ["over 100 bugs", "JIRA, TestRail and the AGILE"],
-    },
-    {
-      text: "Successfully addressed authentication challenges regarding 2FA OAuth by incorporating cookie-caching methods, streamlining the automation workflow to work with minimal manual intervention.",
-      keywords: ["authentication challenges regarding 2FA OAuth", "cookie-caching methods"],
+      text: "Currently working here! Will update this description someday.",
+      keywords: [],
     },
   ],
-  workDate:"Jan 2024 - May 2024",
+  workDate:"Jan 2024 - Present",
   company:"Polaris Intelligence",
-  position:"Position Name"
+  position:"Full Stack Developer"
 }
 
 export default PolarisIntelligence;
