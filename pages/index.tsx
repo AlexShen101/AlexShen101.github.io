@@ -39,10 +39,10 @@ export default function Home() {
         <Header sectionsRef={homeRef} />
         <MyName />
         <SocialMediaAround />
-        {/* <AboutMe ref={aboutRef} /> */}
-        <Experience num={"01"} />
-        <Projects num={"02"} />
-        <GetInTouch num={"03"} />
+        <AboutMe ref={aboutRef} num={"01"}/>
+        <Experience num={"02"} />
+        <Projects num={"03"} />
+        <GetInTouch num={"04"} />
         <Footer
           githubUrl={"https://github.com/AlexShen101/my-portfolio"}
           hideSocialsInDesktop={true}
