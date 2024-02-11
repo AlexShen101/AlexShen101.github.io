@@ -10,7 +10,7 @@ import Link from "next/link";
 const addClass = (ref: any, myclass: string) => {
   ref.current?.classLIst.add(myclass);
 };
-const Header = (props: { sectionsRef }) => {
+const Header = () => {
   const RefNavBar = useRef<HTMLDivElement>(null);
   const [ShowElement, setShowElement] = useState(false);
   const [rotate, setRotate] = useState<boolean>(false);

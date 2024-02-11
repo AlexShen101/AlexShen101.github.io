@@ -5,7 +5,7 @@ import { Link as ReactScrollLink } from "react-scroll";
 export default function DesktopMenu(props: {}) {
   return (
     <div className="font-mono text-xs md:flex hidden flex-row items-center space-x-8 ">
-      {/* <motion.div className=" text-AAsecondary hover:cursor-pointer">
+      <motion.div className=" text-AAsecondary hover:cursor-pointer">
         <ReactScrollLink
           to="aboutSection"
           spy={true}
@@ -18,7 +18,7 @@ export default function DesktopMenu(props: {}) {
             About
           </span>
         </ReactScrollLink>
-      </motion.div> */}
+      </motion.div>
 
       <motion.div className="text-AAsecondary hover:cursor-pointer">
         <ReactScrollLink
@@ -28,7 +28,7 @@ export default function DesktopMenu(props: {}) {
           offset={-300}
           duration={200}
         >
-          &gt; 01.{" "}
+          &gt; 02.{" "}
           <span className="text-white hover:text-AAsecondary duration-300">
             Experience
           </span>
@@ -43,7 +43,7 @@ export default function DesktopMenu(props: {}) {
           offset={-100}
           duration={200}
         >
-          &gt; 02.{" "}
+          &gt; 03.{" "}
           <span className="text-white hover:text-AAsecondary duration-300">
             Projects
           </span>
@@ -57,7 +57,7 @@ export default function DesktopMenu(props: {}) {
           offset={-100}
           duration={200}
         >
-          &gt; 03.{" "}
+          &gt; 04.{" "}
           <span className="text-white hover:text-AAsecondary duration-300">
             Contact
           </span>
