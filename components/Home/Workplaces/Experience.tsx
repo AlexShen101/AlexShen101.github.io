@@ -17,7 +17,8 @@ export default function Experience(props) {
       <section className="flex flex-row items-center">
         <div className="flex flex-row items-center">
           <span className="text-AAsecondary font-sans text-sm  sm:text-xl"> 
-          {props.num}.</span>
+          {props.num}.
+          </span>
         </div>
 
         <span className="text-gray-200 opacity-85 font-bold  tracking-wider text-lg md:text-2xl px-3">
